@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<title>Page title</title>
+</head>
+<body>
+<input type="text" id="name"/>
+<div id="msg"></div>
+<script>
+	$(function(){
+		$("#name").keydown(function(){
+		$("#msg").html($("#name").val());
+		});
+	});
+</script>
+</body>
+</html>
